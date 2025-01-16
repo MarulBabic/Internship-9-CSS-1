@@ -181,6 +181,8 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .header-menu-bottom__element li {
@@ -207,6 +209,8 @@ header {
   font-size: 12px;
   font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }
 
 
@@ -232,8 +236,82 @@ header {
   color: rgb(61, 166, 247);
 }
 
-.todays-mix{
+.todays-mix {
   display: flex;
+  flex-direction: column; 
   align-items: center;
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.todays-mix h1 {
+  font-size: 2em;
+  font-family: serif;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.todays-mix-container {
+  display: flex;
+  flex-direction: row; 
   justify-content: center;
+  gap: 2em; 
+  flex-wrap: wrap; 
+}
+
+.todays-mix__element {
+  position: relative;
+  width: 320px; 
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  cursor: pointer;
+}
+
+.todays-mix__element:not(:last-child)::after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: -1em; 
+  height: 52%; 
+  width: 1px; 
+  background-color: rgb(196, 194, 194); 
+}
+
+.todays-mix__element a{
+  text-decoration: none;
+}
+
+.todays-mix__element img {
+  width: 100%; 
+  height: auto; 
+  margin-bottom: 1em;
+}
+
+.todays-mix__element a h2 {
+  font-size: 1.5em;
+  color: rgb(64, 63, 63);
+  font-weight: 100;
+  margin-bottom: 0.5em;
+  text-align: left;
+  font-family: "TNYAdobeCaslonPro", "Times New Roman", Times, serif;
+}
+
+.todays-mix__element p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #555;
+  text-align: left;
+  font-family: "TNYAdobeCaslonPro", "Times New Roman", Times, serif;
+}
+
+.todays-mix__element p strong {
+  font-size: 1em;
+  color: #000;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.todays-mix__element h2:hover{
+  text-decoration: underline;
 }
