@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
+  overflow-x: hidden;
 }
 header {
   width: 100%;
@@ -488,4 +489,99 @@ header {
 
 .daily-column__element h2:hover{
   text-decoration: underline;
+}
+
+
+.interview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem; 
+  width: 100%;
+  background-color: white; 
+  position: relative;
+}
+
+.interview a{
+  text-decoration: none;
+}
+
+.interview-elements {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  max-width: 85%; 
+  width: 85%; 
+  padding: 1.2rem 2rem; 
+  align-items: center;
+  margin: 0 auto; 
+  transform: translateX(-3%);
+}
+
+.interview-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+  margin-right: 4rem; 
+  
+}
+
+.interview-text h3 {
+  font-size: 1rem;
+  color: white; 
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.interview-text h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.interview-text h1:hover{
+  text-decoration: underline;
+}
+
+.interview-text p {
+  color: white;
+  font-size: 21px;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.interview-text p strong {
+  font-size: 1rem;
+  color: white;
+}
+
+
+.interview-img {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 60%; 
+  margin-left: 2rem;
+  padding-right: 2rem;
+}
+
+.interview-img img {
+  width: 100%; 
+  height: auto;
+  border-radius: 0; 
+}
+
+.interview::after {
+  content: '';
+  display: block;
+  width: 80%; 
+  height: 1.5px; 
+  background-color: rgb(196, 194, 194);
+  position: absolute;
+  bottom: 0; 
+  left: 10%; 
 }
