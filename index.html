@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The New Yorker</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img src="./assets/hamburger.svg" id="hamburger-menu" alt="menu" />
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" id="hamburger-label">
+          <img src="./assets/hamburger.svg" alt="menu" />
+        </label>
+
         <a href="http://127.0.0.1:5500/index.html">
           <img
             class="logo"
@@ -17,6 +25,7 @@
             alt="The New Yorker logo"
           />
         </a>
+
         <div id="nav-options">
           <a href="">Newsletter</a>
           <a href="">Sign In</a>
@@ -28,6 +37,28 @@
               alt="search-icon"
             />
           </a>
+        </div>
+
+        <div id="mobile-nav">
+          <ul class="mobile-menu-items">
+            <li><a href="">The latest</a></li>
+            <li><a href="">The latest</a></li>
+            <li><a href="">The latest</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Books & Culture</a></li>
+            <li><a href="">Fiction & Poetry</a></li>
+            <li><a href="">Humor & Cartoons</a></li>
+            <li><a href="">Magazine</a></li>
+            <li><a href="">Puzzles & Games</a></li>
+            <li><a href="">Video</a></li>
+            <li><a href="">Podcasts</a></li>
+            <li><a href="">Goings On</a></li>
+            <li><a href="">Shop</a></li>
+          </ul>
+          <hr />
+          <a href="">Newsletter</a>
+          <a href="">Sign In</a>
+          <a href="">Search</a>
         </div>
       </nav>
       <a href="">
@@ -188,8 +219,8 @@
         <span>A daily column on what you need to know.</span>
         <div class="daily-column-container">
           <div class="daily-column__element">
+            <img src="assets/trump.webp" alt="" />
             <a href="">
-              <img src="assets/trump.webp" alt="" />
               <h2>The Inagurations of Trump's Oligarchy</h2>
               <p>
                 Certain business titans have made Mar-a-Lago a scene of such
@@ -200,8 +231,8 @@
             >
           </div>
           <div class="daily-column__element">
+            <img src="assets/Hylton-Universal-Jurisdiction.webp" alt="" />
             <a href="">
-              <img src="assets/Hylton-Universal-Jurisdiction.webp" alt="" />
               <h2>Could Other Countries Prosecute Soldiers in Gaza?</h2>
               <p>
                 A growing legal movement has turned to the principle of
@@ -213,8 +244,8 @@
             >
           </div>
           <div class="daily-column__element">
+            <img src="assets/Musk-UKpolitics-Jiao.webp" alt="" />
             <a href="">
-              <img src="assets/Musk-UKpolitics-Jiao.webp" alt="" />
               <h2>Elon Musk’s Latest Terrifying Foray Into British Politics</h2>
               <p>
                 The world’s richest man has become fixated on child sexual
@@ -225,8 +256,8 @@
             >
           </div>
           <div class="daily-column__element">
+            <img src="assets/Mochofsky-PuertoRicoJan8-Polanco.webp" alt="" />
             <a href="">
-              <img src="assets/Mochofsky-PuertoRicoJan8-Polanco.webp" alt="" />
               <h2>An Arson Attack In Puerto Rico</h2>
               <p>
                 A violent act on New Year's Day allegedly commited by a tourist
@@ -245,101 +276,128 @@
               <h3>THE NEW YORKER INTERVIEW</h3>
               <h1>THE LIBERATED LIFE OF COLMAN DOMINGO</h1>
               <p>
-                The actor discusses the West Philly musician that inspired his style; the rejection that nearly made him quit show business; and experience of making "Sing Sing" with former members of prison theatre troupe.
+                The actor discusses the West Philly musician that inspired his
+                style; the rejection that nearly made him quit show business;
+                and experience of making "Sing Sing" with former members of
+                prison theatre troupe.
               </p>
               <p><strong>By Michael Schulman</strong></p>
             </div>
             <div class="interview-img">
-              <img src="/assets/Schulman-Arielle_Bobb-Willis_Colman Domingo_Green.webp" alt="portrait" />
+              <img
+                src="/assets/Schulman-Arielle_Bobb-Willis_Colman Domingo_Green.webp"
+                alt="portrait"
+              />
             </div>
           </div>
         </a>
       </div>
     </main>
     <footer>
-        <div class="footer-image">
-            <img
-                src="./assets/logo-inverted.svg"
-                alt="logo"
-            />
+      <div class="footer-image">
+        <img src="./assets/logo-inverted.svg" alt="logo" />
+      </div>
+      <hr />
+      <div class="footer-container">
+        <nav class="footer-container__elements">
+          <p>SECTIONS</p>
+          <ul class="footer-container__element">
+            <li><a>News</a></li>
+            <li><a>Books & Culture</a></li>
+            <li><a>Fiction & Poetry</a></li>
+            <li><a>Humor & Cartoons</a></li>
+            <li><a>Magazine</a></li>
+            <li><a href="">Crossword</a></li>
+            <li><a href="">Video</a></li>
+            <li><a href="">Podcasts</a></li>
+            <li><a href="">Archive</a></li>
+            <li><a href="">Goings On</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-container__elements">
+          <p>MORE</p>
+          <ul class="footer-container__element">
+            <li><a href="">Manage Account</a></li>
+            <li><a href="">Shop The New Yorker</a></li>
+            <li><a href="">Buy CObers and Cartoons</a></li>
+            <li><a href="">Conde Nast Store</a></li>
+            <li><a href="">Digital Access</a></li>
+            <li><a href="">Newsletters</a></li>
+            <li><a href="">Jigsaw Puzzle</a></li>
+            <li><a href="">RSS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer-general">
+        <nav class="footer-general-nav">
+          <ul class="footer-container__element">
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">F.A.Q.</a></li>
+            <li><a href="">Media Kot</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Accessibility Help</a></li>
+            <li><a href="">User Agreement</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Your California Privacy Rights</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+      <div class="footer-copyright-container">
+        <div class="footer-copyright">
+          <p>
+            © 2025 Condé Nast. All rights reserved. The New Yorker may earn a
+            portion of sales from products that are purchased through our site
+            as part of our Affiliate Partnerships with retailers. The material
+            on this site may not be reproduced, distributed, transmitted, cached
+            or otherwise used, except with the prior written permission of Condé
+            Nast.
+            <a href="">Ad Choices</a>
+          </p>
+          <div class="social-media">
+            <a
+              href="https://www.tiktok.com"
+            >
+              <img src="/assets/tiktok.svg" alt="">
+            </a>
+            <a
+              href="https://www.instagram.com"
+            >
+              <img src="/assets/instagram.svg" alt="">
+            </a>
+            <a
+              href="https://www.threads.net"
+            >
+              <img src="/assets/threads.svg" alt="">
+            </a>
+            <a href="https://www.twitter.com">
+              <img src="/assets/twitter.svg" alt="">
+            </a>
+            <a
+              href="https://www.facebook.com">
+              <img src="/assets/facebook.svg" alt="">
+            </a>
+            <a
+              href="https://www.linkedin.com"
+            >
+              <img src="/assets/linkedin.svg" alt="">
+            </a>
+            <a
+              href="https://www.youtube.com"
+            >
+              <img src="/assets//yt.svg" alt="">
+            </a>
+          </div>
         </div>
-        <hr />
-        <div class="footer-container">
-            <nav class="footer-container__elements">
-                <p>SECTIONS</p>
-                <ul class="footer-container__element">
-                    <li><a>News</a></li>
-                    <li><a>Books & Culture</a></li>
-                    <li><a>Fiction & Poetry</a></li>
-                    <li><a>Humor & Cartoons</a></li>
-                    <li><a>Magazine</a></li>
-                    <li><a href="">Crossword</a></li>
-                    <li><a href="">Video</a></li>
-                    <li><a href="">Podcasts</a></li>
-                    <li><a href="">Archive</a></li>
-                    <li><a href="">Goings On</a></li>
-                </ul>
-            </nav>
-            <nav class="footer-container__elements">
-                <p>MORE</p>
-                <ul class="footer-container__element">
-                    <li><a href="">Manage Account</a></li>
-                    <li><a href="">Shop The New Yorker</a></li>
-                    <li><a href="">Buy CObers and Cartoons</a></li>
-                    <li><a href="">Conde Nast Store</a></li>
-                    <li><a href="">Digital Access</a></li>
-                    <li><a href="">Newsletters</a></li>
-                    <li><a href="">Jigsaw Puzzle</a></li>
-                    <li><a href="">RSS</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr />
-        <div class="footer-general">
-            <nav class="footer-general-nav">
-                <ul class="footer-container__element">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">F.A.Q.</a></li>
-                    <li><a href="">Media Kot</a></li>
-                    <li><a href="">Press</a></li>
-                    <li><a href="">Accessibility Help</a></li>
-                    <li><a href="">User Agreement</a></li>
-                    <br />
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Your California Privacy Rights</a></li>
-                </ul>
-            </nav> 
-        </div>
-        <hr />
-        <div class="footer-copyright-container">
-            <div class="footer-copyright">
-                <p>
-                    © 2025 Condé Nast. All rights reserved. The New Yorker may
-                    earn a portion of sales from products that are purchased
-                    through our site as part of our Affiliate Partnerships with
-                    retailers. The material on this site may not be reproduced,
-                    distributed, transmitted, cached or otherwise used, except
-                    with the prior written permission of Condé Nast.
-                    <a href="">Ad Choices</a>
-                </p>
-                <div class="social-media">
-                    <img src="" alt="" /><img src="" alt="" /><img
-                        src=""
-                        alt=""
-                    /><img src="" alt="" /><img src="" alt="" /><img
-                        src=""
-                        alt=""
-                    /><img src="" alt="" />
-                </div>
-            </div>
-        </div>
-        <hr />
-        <div class="footer-manage">
-            <img src="" alt="" />
-            <p>Manage Preferences</p>
-        </div>
+      </div>
+      <hr />
+      <div class="footer-manage">
+        <img src="" alt="" />
+        <p>Manage Preferences</p>
+      </div>
     </footer>
   </body>
 </html>
